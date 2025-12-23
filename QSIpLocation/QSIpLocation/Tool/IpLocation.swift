@@ -8,6 +8,7 @@
 import Foundation
 import QSNetRequest
 import QSJsonParser
+import QSModelConvert
 
 public class IpLocation {
     static let kIpLoacationLoadTimeKey = "kIpLoacationLoadTimeKey"
@@ -24,7 +25,7 @@ public class IpLocation {
                 let tomorrowDate = Calendar.current.date(byAdding: Calendar.Component.day, value: 1, to: loadDate) {
                 // 时间超过24小时，重新获取
                 if Date() < tomorrowDate {
-                    if let model = stringToModel(jsonStr, modelType: IpLocationModel.self) {
+                    if let model = ModelConvert.stringToModel(jsonStr, modelType: IpLocationModel.self) {
                         onCompletion(model)
                         return
                     }
@@ -40,35 +41,13 @@ public class IpLocation {
                 UserDefaults.standard.setValue(dateFormatter.string(from: Date()), forKey: kIpLoacationLoadTimeKey)
             }
             
-            if let model = jsonToModel(dict, modelType: IpLocationModel.self) {
+            if let model = ModelConvert.jsonToModel(dict, modelType: IpLocationModel.self) {
                 onCompletion(model)
             } else {
                 onCompletion(nil)
             }
         } onError: { _, _ in
             onCompletion(nil)
-        }
-    }
-    
-    /// 将字典字符串转换为Model
-    static func stringToModel<T: Decodable>(_ string: String, modelType: T.Type) -> T? {
-        guard let json = JsonParser.jsonStringToDictionary(with: string) else {
-            return nil
-        }
-        return jsonToModel(json, modelType: modelType)
-    }
-    
-    /// 将字典转换为Model
-    static func jsonToModel<T: Decodable>(_ json: Any, modelType: T.Type) -> T? {
-        if !JSONSerialization.isValidJSONObject(json) {
-            return nil
-        }
-        do {
-            let data = try JSONSerialization.data(withJSONObject: json)
-            let decodedObject = try JSONDecoder().decode(T.self, from: data)
-            return decodedObject
-        } catch {
-            return nil
         }
     }
 }

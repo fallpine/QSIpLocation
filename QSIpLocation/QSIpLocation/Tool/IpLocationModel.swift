@@ -6,13 +6,13 @@
 //
 
 public class IpLocationModel: Decodable {
-    var city: String?
-    var country: String?
-    var ip: String?
-    var loc: String?
-    var org: String?
-    var postal: String?
-    var readme: String?
-    var region: String?
-    var timezone: String?
+    public var city: String?
+    public var country: String?
+    public var ip: String?
+    public var loc: String?
+    public var org: String?
+    public var postal: String?
+    public var readme: String?
+    public var region: String?
+    public var timezone: String?
 }
