@@ -12,4 +12,5 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5'
   spec.source_files  = "QSIpLocation/QSIpLocation/Tool/*.{swift}"
   spec.dependency "QSNetRequest"
+  spec.dependency "QSModelConvert"
 end
