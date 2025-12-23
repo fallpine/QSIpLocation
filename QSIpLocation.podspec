@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
   spec.name         = "QSIpLocation"
   spec.version      = "1.0.0"
-  spec.summary      = "获取ip地址工具类"
-  spec.description  = "获取ip地址"
+  spec.summary      = "ip地址"
+  spec.description  = "获取ip地址工具类"
   spec.homepage     = "https://github.com/fallpine/QSIpLocation"
     spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "QiuSongChen" => "791589545@qq.com" }
