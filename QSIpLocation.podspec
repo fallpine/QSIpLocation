@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "QSIpLocation"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "ip地址"
   spec.description  = "获取ip地址工具类"
   spec.homepage     = "https://github.com/fallpine/QSIpLocation"
