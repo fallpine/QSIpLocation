@@ -6,9 +6,6 @@
 //
 
 import Foundation
-import QSNetRequest
-import QSJsonParser
-import QSModelConvert
 
 public class IpLocation {
     // MARK: - Func

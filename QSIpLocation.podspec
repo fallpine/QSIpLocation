@@ -11,6 +11,4 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/fallpine/QSIpLocation.git", :tag => "#{spec.version}" }
   spec.swift_version = '5'
   spec.source_files  = "QSIpLocation/QSIpLocation/Tool/*.{swift}"
-  spec.dependency "QSNetRequest"
-  spec.dependency "QSModelConvert"
 end
