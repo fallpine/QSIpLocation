@@ -5,17 +5,15 @@
 //  Created by MacM2 on 12/23/25.
 //
 
-public class IpLocationModel: Decodable {
+public class QSIpLocationModel: Decodable {
+    public var countryName: String?
     public var countryCode: String?
-    public var isp: String?
-    public var org: String?
-    public var city: String?
-    public var region: String?
+    public var cityName: String?
+    public var cityCode: String?
     public var regionName: String?
+    public var regionCode: String?
     public var timezone: String?
-    public var country: String?
     public var lon: Double?
     public var lat: Double?
-    public var zip: String?
-    public var query: String?
+    public var ip: String?
 }

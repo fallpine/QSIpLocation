@@ -13,8 +13,8 @@
 		1F1779D82EFA2EA7008B8697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1779CC2EFA2EA7008B8697 /* Assets.xcassets */; };
 		1F1779DA2EFA2EA7008B8697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1779CF2EFA2EA7008B8697 /* LaunchScreen.storyboard */; };
 		1F1779DB2EFA2EA7008B8697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1779D12EFA2EA7008B8697 /* Main.storyboard */; };
-		1F1779DF2EFA2FF7008B8697 /* IpLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1779DE2EFA2FF7008B8697 /* IpLocation.swift */; };
-		1F1779E12EFA325F008B8697 /* IpLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1779E02EFA325F008B8697 /* IpLocationModel.swift */; };
+		1F1779DF2EFA2FF7008B8697 /* QSIpLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1779DE2EFA2FF7008B8697 /* QSIpLocation.swift */; };
+		1F1779E12EFA325F008B8697 /* QSIpLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1779E02EFA325F008B8697 /* QSIpLocationModel.swift */; };
 		64CF4355A5340FE6F168E90F /* Pods_QSIpLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189CAA17B6A8E3E0861A53BE /* Pods_QSIpLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +28,8 @@
 		1F1779D02EFA2EA7008B8697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F1779D22EFA2EA7008B8697 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1F1779D32EFA2EA7008B8697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F1779DE2EFA2FF7008B8697 /* IpLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpLocation.swift; sourceTree = "<group>"; };
-		1F1779E02EFA325F008B8697 /* IpLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpLocationModel.swift; sourceTree = "<group>"; };
+		1F1779DE2EFA2FF7008B8697 /* QSIpLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSIpLocation.swift; sourceTree = "<group>"; };
+		1F1779E02EFA325F008B8697 /* QSIpLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSIpLocationModel.swift; sourceTree = "<group>"; };
 		7A95F2ADF75C10CF309B12A1 /* Pods-QSIpLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSIpLocation.release.xcconfig"; path = "Target Support Files/Pods-QSIpLocation/Pods-QSIpLocation.release.xcconfig"; sourceTree = "<group>"; };
 		E7ED3886938577FA5A15B2FA /* Pods-QSIpLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QSIpLocation.debug.xcconfig"; path = "Target Support Files/Pods-QSIpLocation/Pods-QSIpLocation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +82,8 @@
 		1F1779DD2EFA2EAF008B8697 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				1F1779DE2EFA2FF7008B8697 /* IpLocation.swift */,
-				1F1779E02EFA325F008B8697 /* IpLocationModel.swift */,
+				1F1779DE2EFA2FF7008B8697 /* QSIpLocation.swift */,
+				1F1779E02EFA325F008B8697 /* QSIpLocationModel.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F1779D52EFA2EA7008B8697 /* AppDelegate.swift in Sources */,
-				1F1779DF2EFA2FF7008B8697 /* IpLocation.swift in Sources */,
+				1F1779DF2EFA2FF7008B8697 /* QSIpLocation.swift in Sources */,
 				1F1779D62EFA2EA7008B8697 /* SceneDelegate.swift in Sources */,
-				1F1779E12EFA325F008B8697 /* IpLocationModel.swift in Sources */,
+				1F1779E12EFA325F008B8697 /* QSIpLocationModel.swift in Sources */,
 				1F1779D72EFA2EA7008B8697 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

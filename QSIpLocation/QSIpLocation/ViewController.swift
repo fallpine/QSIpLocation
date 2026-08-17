@@ -109,12 +109,11 @@ class ViewController: UIViewController {
     }
 
     private func makeResultText(with model: IpLocationModel) -> String {
-        let ip = model.query ?? "-"
-        let country = model.country ?? "-"
+        let ip = model.ip ?? "-"
+        let country = model.countryName ?? "-"
         let countryCode = model.countryCode ?? "-"
         let region = model.regionName ?? "-"
-        let city = model.city ?? "-"
-        let isp = model.isp ?? "-"
+        let city = model.cityName ?? "-"
         let latitude = model.lat.map { String($0) } ?? "-"
         let longitude = model.lon.map { String($0) } ?? "-"
         let timezone = model.timezone ?? "-"
@@ -124,7 +123,6 @@ class ViewController: UIViewController {
         国家: \(country) (\(countryCode))
         地区: \(region)
         城市: \(city)
-        ISP: \(isp)
         经纬度: \(latitude), \(longitude)
         时区: \(timezone)
         """
